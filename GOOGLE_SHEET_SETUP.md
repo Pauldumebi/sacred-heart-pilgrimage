@@ -46,7 +46,6 @@ function doPost(e) {
       data.emailAddress || '',
       data.partySize || '',
       data.transport || '',
-      data.intentions || ''
     ];
 
     sheet.appendRow(row);
