@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mode: 'no-cors', // Google Apps Script redirects with 302, mode: 'no-cors' succeeds silently
             cache: 'no-cache',
             headers: {
-              'Content-Type': 'application/json',
+              'Content-Type': 'text/plain;charset=utf-8',
             },
             body: JSON.stringify(newRegistration)
           });
