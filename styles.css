@@ -1,0 +1,768 @@
+/* ==========================================================================
+   SACRED HEART YOUTH GROUP - MARIAN PILGRIMAGE TO OSMOTHERLEY
+   Streamlined Registration Page Design System
+   ========================================================================== */
+
+:root {
+  --marian-navy: #102442;
+  --marian-navy-deep: #0a172c;
+  --marian-navy-light: #1b3762;
+  
+  --gold-primary: #b88d37;
+  --gold-light: #eed295;
+  --gold-dark: #8c6a21;
+  --gold-subtle: rgba(184, 141, 55, 0.25);
+  
+  --parchment: #f9f6ef;
+  --parchment-inner: #fdfbf7;
+  --parchment-darker: #f0e9dc;
+  
+  --text-dark: #1b2636;
+  --text-muted: #526074;
+  --text-white: #ffffff;
+  
+  --border-subtle: #e2dbce;
+  --border-gold: rgba(184, 141, 55, 0.45);
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --shadow-card: 0 12px 36px rgba(16, 36, 66, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--parchment);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.max-800 {
+  max-width: 800px;
+}
+
+.max-900 {
+  max-width: 900px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ==========================================================================
+   SACRED BANNER
+   ========================================================================== */
+
+.sacred-banner {
+  background: var(--marian-navy-deep);
+  color: var(--gold-light);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.banner-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.banner-group {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.banner-contact {
+  font-size: 12px;
+  color: #e2e8f0;
+  letter-spacing: 0.3px;
+}
+
+.banner-contact strong {
+  color: #ffffff;
+}
+
+.banner-phone-link {
+  color: var(--gold-light);
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 2px;
+}
+
+.banner-phone-link:hover {
+  color: #ffffff;
+}
+
+.marian-star {
+  color: var(--gold-primary);
+  margin: 0 8px;
+}
+
+/* ==========================================================================
+   HERO & FIRST FOLD (FORM IS THE FIRST THING YOU SEE)
+   ========================================================================== */
+
+.pilgrimage-hero-header {
+  background: linear-gradient(180deg, var(--marian-navy) 0%, var(--marian-navy-deep) 100%);
+  color: var(--text-white);
+  padding: 44px 0 60px;
+  position: relative;
+  border-bottom: 2px solid var(--gold-primary);
+}
+
+.hero-top-info {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 34px;
+}
+
+.eyebrow-text {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-family: var(--font-serif);
+  font-size: 52px;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.location-heading {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 16px;
+}
+
+.date-badge-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.date-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-gold);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f1f5f9;
+}
+
+.hero-prayer-blurb {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.5;
+  color: #e2e8f0;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+/* Countdown to the 31st */
+.countdown-strip {
+  background: rgba(10, 23, 44, 0.7);
+  border: 1px solid var(--gold-primary);
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 auto;
+}
+
+.countdown-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.countdown-boxes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.c-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 44px;
+}
+
+.c-box span {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.c-box small {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.c-colon {
+  color: var(--gold-primary);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   REGISTRATION CARD (FIRST THING YOU SEE)
+   ========================================================================== */
+
+/* ==========================================================================
+   REGISTRATION CARD (FIRST THING YOU SEE)
+   ========================================================================== */
+
+.registration-card-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.reg-card {
+  background: #ffffff;
+  color: var(--text-dark);
+  border: 1.5px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 38px 42px;
+  box-shadow: 0 20px 50px rgba(10, 23, 44, 0.35), 0 0 0 1px rgba(184, 141, 55, 0.2);
+  position: relative;
+}
+
+.reg-card-top {
+  text-align: center;
+  border-bottom: 1px solid #ebd9b8;
+  padding-bottom: 20px;
+  margin-bottom: 26px;
+}
+
+.reg-crest {
+  font-family: var(--font-heading);
+  color: var(--gold-primary);
+  font-size: 13px;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.reg-card-top h2 {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--marian-navy);
+  line-height: 1.1;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.reg-card-top p {
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+/* Clean Form */
+.clean-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+  margin-bottom: 6px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--marian-navy);
+  margin-bottom: 7px;
+}
+
+.form-field .required {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  font-size: 14.5px;
+  pointer-events: none;
+  opacity: 0.85;
+  z-index: 2;
+}
+
+.clean-form input,
+.clean-form select {
+  width: 100%;
+  height: 48px;
+  background: #fdfbf7;
+  border: 1.5px solid #dcd3c3;
+  border-radius: 8px;
+  padding: 0 14px 0 42px;
+  font-size: 14.5px;
+  color: var(--text-dark);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.clean-form select {
+  cursor: pointer;
+}
+
+.clean-form textarea {
+  width: 100%;
+  background: #fdfbf7;
+  border: 1.5px solid #dcd3c3;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--text-dark);
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 74px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.clean-form input:focus,
+.clean-form select:focus,
+.clean-form textarea:focus {
+  background: #ffffff;
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3.5px rgba(184, 141, 55, 0.18);
+}
+
+.clean-form input::placeholder,
+.clean-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-submit-row {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #102442 0%, #183863 50%, #0d1e36 100%);
+  color: #faebd0;
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 30px;
+  padding: 16px 28px;
+  font-family: var(--font-heading);
+  font-size: 14.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(16, 36, 66, 0.28);
+  transition: all 0.25s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #142e54 0%, #1f477d 50%, #102442 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(16, 36, 66, 0.4), 0 0 16px rgba(184, 141, 55, 0.35);
+}
+
+.submit-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.spinner-dot {
+  display: inline-block;
+  animation: spin 1.2s infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn-arrow {
+  color: var(--gold-primary);
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover .btn-arrow {
+  transform: scale(1.2);
+}
+
+.submit-reassurance {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 12px;
+  letter-spacing: 0.2px;
+}
+
+/* Success Confirmation */
+.confirmation-success-box {
+  background: #f0fdf4;
+  border: 1.5px solid #22c55e;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  color: #14532d;
+  margin-top: 10px;
+}
+
+.success-icon {
+  width: 44px;
+  height: 44px;
+  background: #22c55e;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 12px;
+}
+
+.confirmation-success-box h3 {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.confirmation-success-box p {
+  font-size: 14.5px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.confirm-contact {
+  font-size: 13px;
+  color: #166534;
+}
+
+/* ==========================================================================
+   PAGE SECTIONS & HEADINGS
+   ========================================================================== */
+
+.page-section {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section-heading-wrap {
+  margin-bottom: 34px;
+}
+
+.gold-icon {
+  font-size: 20px;
+  color: var(--gold-primary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.section-heading-wrap h2 {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  color: var(--marian-navy);
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   ORDER OF THE PILGRIMAGE
+   ========================================================================== */
+
+.schedule-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-step {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--gold-primary);
+  border-radius: 6px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.step-time {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--marian-navy);
+  min-width: 82px;
+  padding-top: 2px;
+}
+
+.step-detail strong {
+  display: block;
+  font-size: 15.5px;
+  color: var(--marian-navy);
+  margin-bottom: 3px;
+}
+
+.step-detail p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   DIRECTIONS SECTION
+   ========================================================================== */
+
+.directions-section {
+  background: var(--parchment-inner);
+}
+
+.directions-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.directions-text-card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 26px;
+}
+
+.address-callout {
+  background: var(--parchment);
+  border: 1px solid var(--border-gold);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--marian-navy);
+  margin-bottom: 18px;
+}
+
+.nav-links-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.nav-btn {
+  flex: 1;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.map-google {
+  background: #1a73e8;
+  color: white;
+}
+.map-google:hover {
+  background: #1558b0;
+}
+
+.map-apple {
+  background: #24292f;
+  color: white;
+}
+.map-apple:hover {
+  background: #000000;
+}
+
+.travel-hints {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 16px;
+}
+
+.hint {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.hint strong {
+  color: var(--marian-navy);
+}
+
+.map-embed-box {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* ==========================================================================
+   HISTORIC SACRED HERITAGE
+   ========================================================================== */
+
+.heritage-section {
+  background: var(--parchment);
+}
+
+.heritage-card {
+  background: #ffffff;
+  border: 1.5px solid var(--border-gold);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.heritage-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+}
+
+.heritage-text-col p {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.memorare-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--marian-navy);
+  border-left: 3px solid var(--gold-primary);
+  padding-left: 14px;
+  margin-top: 14px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.clean-footer {
+  background: var(--marian-navy-deep);
+  color: #94a3b8;
+  padding: 40px 0 28px;
+  font-size: 13.5px;
+}
+
+.footer-contact-block {
+  margin-bottom: 20px;
+}
+
+.footer-contact-block p {
+  margin-bottom: 6px;
+}
+
+.footer-contact-block strong {
+  color: #ffffff;
+}
+
+.footer-flyer-link {
+  color: var(--gold-light);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer-legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 18px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-flex { justify-content: center; text-align: center; }
+  .banner-group { justify-content: center; }
+  .main-heading { font-size: 38px; }
+  .reg-card { padding: 26px 20px; }
+  .clean-form .form-grid { grid-template-columns: 1fr; }
+  .directions-layout { grid-template-columns: 1fr; }
+  .heritage-card { grid-template-columns: 1fr; }
+  .timeline-step { flex-direction: column; gap: 6px; }
+  .countdown-strip { flex-direction: column; gap: 8px; }
+}

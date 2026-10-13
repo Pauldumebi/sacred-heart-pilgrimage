@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilgrimage to Our Lady of Mount Grace, Osmotherley | Registration</title>
+  <meta name="description" content="Register for the Sacred Heart Youth Group Pilgrimage to Our Lady of Mount Grace, Osmotherley on Saturday 31 October 2026.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Sacred Banner -->
+  <div class="sacred-banner">
+    <div class="container banner-flex">
+      <div class="banner-group">
+        <span class="marian-star">✦</span>
+        <span>Sacred Heart Youth Group · Diocese of Middlesbrough</span>
+        <span class="marian-star">✦</span>
+      </div>
+      <div class="banner-contact">
+        <span>Enquiries / Lifts: <strong>Ozurumba Lucia</strong> <a href="tel:07423239193" class="banner-phone-link">07423 239193</a> </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & First Fold: Registration Form & Details -->
+  <header class="pilgrimage-hero-header">
+    <div class="container">
+      <div class="hero-top-info">
+        <p class="eyebrow-text">A Pilgrimage in the Month of Mary</p>
+        <h1 class="main-heading">Our Lady of Mount Grace</h1>
+        <p class="location-heading">Osmotherley, North Yorkshire</p>
+        
+        <div class="date-badge-row">
+          <div class="date-badge">
+            <span class="cal-icon">📅</span>
+            <strong>Saturday, 31 October 2026</strong>
+          </div>
+          <div class="date-badge">
+            <span class="cal-icon">⏰</span>
+            <span>11:00am – 12:30pm</span>
+          </div>
+        </div>
+
+        <p class="hero-prayer-blurb">
+          Join us as we place our loved ones, intentions, hopes and plans before Our Lady, asking her maternal prayers for our families and our community as we draw closer to her Son.
+        </p>
+
+        <!-- Countdown to the 31st -->
+        <div class="countdown-strip">
+          <span class="countdown-title">Pilgrimage Begins In:</span>
+          <div class="countdown-boxes">
+            <div class="c-box"><span id="daysCount">--</span><small>Days</small></div>
+            <span class="c-colon">:</span>
+            <div class="c-box"><span id="hoursCount">--</span><small>Hours</small></div>
+            <span class="c-colon">:</span>
+            <div class="c-box"><span id="minsCount">--</span><small>Mins</small></div>
+            <span class="c-colon">:</span>
+            <div class="c-box"><span id="secsCount">--</span><small>Secs</small></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Registration Form (The very first thing you see) -->
+      <div class="registration-card-wrap">
+        <div class="reg-card">
+          <div class="reg-card-top text-center">
+            <h2>Register Your Attendance</h2>
+            <p>All parishioners, youth, families & friends are warmly welcome</p>
+          </div>
+
+          <form id="pilgrimageForm" class="clean-form">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fullName">
+                  <span>Your Full Name</span>
+                  <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon">👤</span>
+                  <input type="text" id="fullName" placeholder="e.g. Mary Joseph" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="phoneNumber">
+                  <span>Mobile Number</span>
+                  <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon">📱</span>
+                  <input type="tel" id="phoneNumber" placeholder="e.g. 07123 456789" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="emailAddress">
+                  <span>Email Address</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon">✉️</span>
+                  <input type="email" id="emailAddress" placeholder="e.g. you@example.com">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="partySize">
+                  <span>Attendees</span>
+                  <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon">👥</span>
+                  <select id="partySize" required>
+                    <option value="1">1 Person (Just me)</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5+">5+ People (Family / Youth Group)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field full-width">
+                <label for="transportSelection">
+                  <span>Transport & Carpooling</span>
+                  <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon">🚗</span>
+                  <select id="transportSelection" required>
+                    <option value="driving-independent">I am driving independently</option>
+                    <option value="need-lift">I need a lift / carpool from church car park</option>
+                    <option value="offer-seats">I am driving and can offer spare seats</option>
+                    <option value="youth-bus">Joining the Sacred Heart Youth group travel</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="submit-btn" id="regSubmitBtn">
+                <span>Confirm Pilgrimage Registration</span>
+                <span class="btn-arrow">✦</span>
+              </button>
+              <p class="submit-reassurance">Free attendance · Lifts arranged from church · Arrive by 10:45 am</p>
+            </div>
+          </form>
+
+          <!-- Inline Confirmation Message (shown after submission) -->
+          <div id="confirmationBox" class="confirmation-success-box" style="display: none;">
+            <div class="success-icon">✓</div>
+            <h3>Thank You for Registering!</h3>
+            <p>Your pilgrimage registration has been recorded. We look forward to praying together at Osmotherley on <strong>Saturday 31 October at 11:00 am</strong>.</p>
+            <p class="confirm-contact">If your plans change or you need a lift, please contact <strong>Ozurumba Lucia on 07423 239193</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Order of the Pilgrimage -->
+  <!-- <section class="page-section order-section">
+    <div class="container max-800">
+      <div class="section-heading-wrap text-center">
+        <span class="gold-icon">✠</span>
+        <h2>Order of the Pilgrimage</h2>
+        <p class="section-sub">Saturday 31 October 2026 · A serene time of prayer</p>
+      </div>
+
+      <div class="schedule-timeline">
+        <div class="timeline-step">
+          <div class="step-time">10:45 am</div>
+          <div class="step-detail">
+            <strong>Arrival & Gathering</strong>
+            <p>Gather at the base of the chapel footpath in Osmotherley. Leaders will welcome pilgrims and guide the walk up the trail.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-time">11:00 am</div>
+          <div class="step-detail">
+            <strong>The Angelus & Opening Prayer</strong>
+            <p>Consecration of the pilgrimage to Our Lady and opening Marian hymn.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-time">11:15 am</div>
+          <div class="step-detail">
+            <strong>The Holy Rosary & Meditations</strong>
+            <p>Praying the mysteries of the Holy Rosary, placing our families, youth, and intentions before Our Lady.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-time">11:45 am</div>
+          <div class="step-detail">
+            <strong>Litany of Loreto & Entrustment</strong>
+            <p>Litany to Our Lady and an act of entrustment for our community and young people.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-time">12:00 pm</div>
+          <div class="step-detail">
+            <strong>Quiet Prayer & Lighting of Votive Candles</strong>
+            <p>Silent personal prayer inside the historic chapel, lighting candles at the shrine, and final blessing.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-time">12:30 pm</div>
+          <div class="step-detail">
+            <strong>Closing & Fellowship</strong>
+            <p>Concluding prayer, followed by friendly fellowship and optional scenic walk on the moors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Section 2: Directions to Our Lady of Mount Grace -->
+  <section class="page-section directions-section">
+    <div class="container">
+      <div class="section-heading-wrap text-center">
+        <span class="gold-icon">📍</span>
+        <h2>Directions to Our Lady of Mount Grace</h2>
+        <p class="section-sub">18 North End, Osmotherley, Northallerton DL6 3BB</p>
+      </div>
+
+      <div class="directions-layout">
+        <div class="directions-text-card">
+          <div class="address-callout">
+            <strong>Our Lady of Mount Grace Catholic Church</strong><br>
+            Monastery of Our Lady of Mt Grace<br>
+            18 North End, Osmotherley<br>
+            Northallerton <strong>DL6 3BB</strong>
+          </div>
+
+          <div class="nav-links-row">
+            <a href="https://maps.app.goo.gl/BJSogD4n3oQs6GMQ7" target="_blank" class="nav-btn map-google">
+              Open Google Maps ↗
+            </a>
+            <a href="http://maps.apple.com/?q=Our+Lady+of+Mount+Grace+Catholic+Church+Osmotherley+DL6+3BB" target="_blank" class="nav-btn map-apple">
+              Open Apple Maps ↗
+            </a>
+          </div>
+
+          <div class="travel-hints">
+            <div class="hint">
+              <strong>🚗 Getting There:</strong> Take the A19, then follow signs into Osmotherley village.
+            </div>
+            <div class="hint">
+              <strong>🅿️ Parking:</strong> Parking is available in the village of Osmotherley and near the chapel approach. Please arrive by 10:45 am.
+            </div>
+            <div class="hint">
+              <strong>🥾 Footwear:</strong> The final path up to the Lady Chapel is a gentle, scenic stone trail through woodland. Please wear comfortable, sturdy walking shoes and warm clothing.
+            </div>
+          </div>
+        </div>
+
+        <div class="map-embed-box">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9230.137837095908!2d-1.3060199222476595!3d54.408078872619034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ebf116d3c2ef5%3A0x6d8961ae0714dcc8!2sOur%20Lady%20of%20Mount%20Grace%20Catholic%20Church%2C%20Monastery%20of%20Our%20Lady%20of%20Mt%20Grace!5e0!3m2!1sen!2suk!4v1728760000000!5m2!1sen!2suk" 
+            width="100%" 
+            height="360" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Directions to Osmotherley Lady Chapel">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Historic Sacred Heritage -->
+  <section class="page-section heritage-section">
+    <div class="container max-900">
+      <div class="section-heading-wrap text-center">
+        <span class="gold-icon">✦</span>
+        <h2>Historic Sacred Heritage</h2>
+        <p class="section-sub">Over 600 years of Catholic pilgrimage in the Cleveland Hills</p>
+      </div>
+
+      <div class="heritage-card">
+        <div class="heritage-img-col">
+          <img src="assets/chapel.jpg" alt="Our Lady of Mount Grace Lady Chapel Osmotherley" class="heritage-photo">
+        </div>
+        <div class="heritage-text-col">
+          <p>
+            Perched high above Osmotherley with expansive views across the Vale of Mowbray, the Lady Chapel was founded in the late 14th century in connection with the Carthusian monks of Mount Grace Priory (1398).
+          </p>
+          <p>
+            Throughout centuries of persecution and penal times following the English Reformation, this quiet stone sanctuary remained a steadfast refuge of Catholic faith, where pilgrims secretly climbed the hillside to ask Our Lady’s intercession.
+          </p>
+          <p>
+            Today, lovingly restored under the Diocese of Middlesbrough, the shrine stands as a holy haven of peace, prayer, and maternal shelter.
+          </p>
+          <div class="memorare-quote">
+            “Remember, O most gracious Virgin Mary, that never was it known that anyone who fled to thy protection was left unaided.”
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page Footer -->
+  <footer class="clean-footer">
+    <div class="container text-center">
+      <div class="footer-contact-block">
+        <p><strong>Questions or need further information?</strong></p>
+        <p>Please contact <strong>Ozurumba Lucia on 07423 239193</strong></p>
+      </div>
+      <div class="footer-legal">
+        <p>Sacred Heart Youth Group · Pilgrimage to Our Lady of Mount Grace, Osmotherley · Saturday 31 October 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
